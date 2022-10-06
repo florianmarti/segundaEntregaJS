@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <div>
+        <div> 
+            <h1>Solicitud de Turnos</h1>
+            <h2>Barberia Pura Pinta</h2>
+            <p>Ingrese el turno Solicitado</p>
+        </div>
+    </div>
+    <main>
+        <form action="#">
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="pnombre" name="pnombre"><br><br>
+            <label for="Apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"><br><br>
+            <label for="Servicio">Elegir un Servicio:</label>
+            <select name="barberia" id="barberia">
+                <option value="corte">Corte</option>
+                <option value="barba">Barba</option>
+                <option value="cejas">Cejas</option>
+                <option value="vapor">Spa</option>
+            </select>
+                        <br><br>
+            <label for="Turnos">Turno</label>
+            <input type="date" id="dia" name="dia"><br><br>
+            <label for="Hora">Hora de Reserva</label>
+            <input type="time" id="hora" name="hora"> de Lun - Sab (13:00 - 16:00 o 19:00 a 22:30)
+            <div id="info"></div>
+            <br><br>
+             
+            
+            <button type="button" onclick="getData()">Enviar</button>
+          </form>
+          
+          <p>Haga click en Enviar</p>
+          
+    </main>
+    <script src="./script.js" ></script>
+</body>
+</html>
